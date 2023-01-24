@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* font-family: 'Poppins', sans-serif; */
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(235, 238, 241);
+    font-family: 'Poppins', sans-serif;
+}
+/* PreLoader */
+#preLoader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.loader {
+    width: 148px;
+    height: 148px;
+    display: inline-block;
+    position: relative;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 183, 255);
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 2s linear infinite;
+  }
+  .loader::after {
+    animation-delay: 1s;
+  }
+  
+  @keyframes animloader {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+/* .... */
+a{
+    text-decoration: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+.webHeader{
+    width: 100%;
+    height: 100vh;
+    perspective: 1000px;
+    background-image: linear-gradient(rgba(0, 195, 255, 0.2) 30%,rgb(235, 238, 241) 70%);
+}
+nav{
+    padding: 10px 40px;
+    height: 12vh;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    color: #2B3467;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    /* transition: all 0.4s ease-in-out; */
+}
+nav img{
+    width: 45px;
+    margin-right: 100px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px -1px rgba(10, 99, 169, 0.16), -5px -5px 5px -1px rgba(239, 239, 239, 0.7);
+}
+#icon-style i{
+    font-size: 25px;
+    color: #005FF9;
+}
+#icon-style{
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px -1px rgba(10, 99, 169, 0.16), -5px -5px 5px -1px rgba(239, 239, 239, 0.7);
+    display: none;
+}
+.webHeaderInner{
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    box-shadow: 0px 200px 200px -15px rgba(0, 195, 255, 0.1);   
+}
+.container{
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+}
+.back-face{
+    backface-visibility: hidden;
+    background-color: transparent;
+    color: azure;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+.menuBar-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuBar-list li{
+    padding: 20px;
+}
+.menuBar-list li a{
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 60px;
+}
+.textContainer{
+    width: 45%;
+    padding-left: 5%;
+}
+.textContainer h1{
+    color: #2B3467;
+    font-size: 50px;
+    font-weight: 600;
+}
+.textContainer h5{
+    font-size: 35px;
+    font-weight: 400;
+    color: #4B56D2;
+}
+.textContainer p{
+    font-size: 12px;
+    color: grey;
+    line-height: 20px;
+    color: #71b7e2;
+}
+.imageContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageContainer img{
+    height: 450px;
+}
+button{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 12px;
+    margin: 20px;
+    width: 190px;
+    background: #ebeef1;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    color: #4B56D2;
+    box-shadow: 8px 8px 8px -1px rgba(10, 99, 169, 0.16), -8px -8px 8px -1px rgba(255, 255, 255, 0.70);
+}
+button:hover{
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16), inset -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    font-size: 50px;
+    box-shadow: 0px 200px 200px -15px rgba(0, 195, 255, 0.1);   
+}
+#topPicOuter{
+    width: 40px;
+    height: 600%;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    margin-left: -35px;
+    opacity: 0.8;
+    z-index: 1;
+}
+.topPic{
+    width: 100px;
+    position: sticky;
+    top: 82vh;
+    transform: rotateZ(25deg);
+    border-radius: 50%;
+}
+#hiPic{
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    width: 300px;
+    margin-left: -85%;
+    visibility: hidden;
+    transform: rotateZ(-45deg);
+    transition: all 1s ease-out;
+    z-index: 2;
+}
+section h1{
+    color: #2B3467;
+    font-size: 48px;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    text-shadow: 3px 5px 6px rgb(186, 186, 186);
+}
+.project-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+.project-imagePart{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+.computer{
+    height: 100%;
+}
+.project-bitmojiPart{
+    width: 20vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.project-bitmojiPart img{
+    width: 150%;
+    margin-bottom: 30px;
+}
+.chromePic img{
+    height: 60px;
+    margin: 7px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.chromeBox{
+    position: absolute;
+    top: 30%;
+}
+.chromeText{
+    font-size: 12px;
+    margin-left: -62px;
+    position: absolute;
+    bottom: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(218, 218, 218);
+}
+
+@media screen and (max-width: 1212px) {
+    .computer{
+        height: 80%;
+    }
+    .chromeBox{
+        top: 45%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    nav{
+        height: 8vh;
+        padding: 10px 20px;
+    }
+    nav img{
+        width: 50px;
+    }
+    #icon-style i{
+        font-size: 29px;
+    }
+    #icon-style{
+        width: 53px;
+        height: 53px;
+        display: flex;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .textContainer{
+        padding-top: 10px;
+        width: 90%;
+        height: 60%;
+    }
+    .imageContainer{
+        width: 95%;
+        height: 40%;
+        justify-content: end;
+        align-items: flex-start;
+    }
+    .imageContainer img{
+        height: 250px;
+    }
+    nav ul a{
+        display: none;
+    }
+    button{
+        font-size: 20px;
+        padding: 8px;
+        margin: 0;
+        width: 140px;
+        position: relative;
+        z-index: 1;
+    }
+    .topPicText{
+        top: 72vh;
+    }
+    .project-container{
+        flex-direction: column;
+    }
+    .project-imagePart{
+        height: 60%;
+        width: 100%;
+        justify-content: center;
+    }
+    .computer{
+        height: 77%;
+    }
+    .project-bitmojiPart{
+        width: auto;
+        height: 40%;
+    }
+    .project-bitmojiPart img{
+        height: 100%;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .chromePic img{
+        height: 32px;
+    }
+    .chromeText{
+        font-size: 9px;
+        margin-left: -45px;
+    }
+    #topPicOuter{
+        height: 650%;
+    }
+}

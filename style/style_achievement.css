@@ -1,0 +1,99 @@
+#achievement{
+    display: flex;
+    flex-direction: column;
+}
+.achievementTextContainer{
+    height: 15%;
+}
+.achievementBodyContainer{
+    height: 85%;
+    width: 100%;
+    display: flex;
+}
+.achievementImagePart{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.achievementImagePart img{
+    height: 300px;
+}
+.achievementDisplayContainer{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.displayContainer{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    color: rgb(19, 174, 19);
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 40px;
+    background-color: rgb(22, 22, 22);
+    padding: 18px;
+    border-radius: 40px;
+}
+.displayContainer img{
+    width: 100%;
+    height: 100%;
+}
+#infytq_button, #tcs_button, #coding_button{
+    position: absolute;
+    padding: 12px;
+    margin: 20px;
+    width: 60px;
+    background: #58deff;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    color: #4B56D2;
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16), inset -10px -10px 10px -1px rgba(117, 117, 117, 0.7);
+    display: flex;
+    align-items: center;
+}
+#infytq_button{
+    bottom: 5%;
+    left: 2%;
+}
+#tcs_button{
+    width: 100px;
+    bottom: 5%;
+    left: 32%;
+}
+#coding_button{
+    bottom: 5%;
+    left: 71%;
+}
+#infytq_button img{
+    width: 90%;
+}
+
+@media screen and (max-width: 980px) {
+    .achievementImagePart{
+        width: 100%;
+        height: 30%;
+    }
+    .achievementDisplayContainer{
+        width: 100%;
+        height: 70%;
+    }
+    .achievementBodyContainer{
+        flex-direction: column;
+    }
+    .achievementImagePart img{
+      height: 250px;
+    }
+    .displayContainer{
+      width: 350px;
+      height: 350px;
+    }
+    #coding_button{
+      left: 69%;
+    }
+}
