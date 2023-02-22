@@ -89,7 +89,7 @@ function ScannerIterate() {
           codingLogo.innerHTML='<img src="./images/leetcode-icon.png">';
           cbTitle.innerHTML='<div>Leetcode</div>';
           rating.innerHTML='1431';
-          problems.innerHTML='280+';
+          problems.innerHTML='300+';
           rating.nextElementSibling.innerHTML="Contest Rating";
           cbBtn.innerHTML='<button><a href="https://leetcode.com/19R01A0457/" target="_blank">View Profile</a></button>';
         }
