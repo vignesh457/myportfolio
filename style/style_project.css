@@ -386,6 +386,9 @@ section h1{
     #topPicOuter{
         height: 650%;
     }
+    .chromeText{
+        font-size: 8px;
+    }
     .chromePic{
         width: 35px;
     }
