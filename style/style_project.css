@@ -241,7 +241,15 @@ section h1{
     position: absolute;
     left: 50%;
     transform: translate(-50%,0%);
-    text-shadow: 3px 5px 6px rgb(186, 186, 186);
+}
+section h1 img{
+    width: 100%;
+    height: 22px;
+    position: absolute;
+    bottom: -1px;
+    left: 8px;
+    z-index: -1;
+    opacity: 0.8;
 }
 .project-container{
     width: 100%;
