@@ -86,9 +86,13 @@ animation: glow 5s linear infinite;
 .skillContainer{
   width: 380px;
   height: 380px;
-  transform: rotate(2deg);
 }
 .yogaPic{
-  width: 250px;
+  width: 260px;
+}
+}
+@media screen and (max-width: 360px) {
+.box{
+  transform-origin: 180px 38px;
 }
 }
