@@ -3,18 +3,8 @@
     flex-direction: column;
     overflow: hidden;
     background: url("../images/hobby-bg.svg");
-    animation: hobbyBG 20s linear infinite;
 }
-@keyframes hobbyBG {
-    0%{
-        background-position-x: 0px;
-        background-position-y: 0px;
-    }
-    100%{
-        background-position-x: -200vh;
-        background-position-y: 200vh;
-    }
-}
+
 .hobbyTextContainer{
     height: 15%;
 }

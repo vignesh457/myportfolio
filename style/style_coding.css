@@ -3,15 +3,6 @@
     flex-direction: column;
     background: url("../images/coding-bg.svg");
     background-position: center;
-    animation: codingBG 50s linear infinite;
-}
-@keyframes codingBG {
-    0%,100%{
-        background-size: 15%;
-    }
-    50%{
-        background-size: 40%;
-    }
 }
 .coding_profileTextContainer{
     height: 25%;
