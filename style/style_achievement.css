@@ -1,6 +1,16 @@
 #achievement{
     display: flex;
     flex-direction: column;
+    background: url("../images/acheivement-bg.svg");
+    animation: achievementBG 20s linear infinite;
+}
+@keyframes achievementBG {
+    0%{
+        background-position-y: 0px;
+    }
+    100%{
+        background-position-y: 200vh;
+    }
 }
 .achievementTextContainer{
     height: 15%;

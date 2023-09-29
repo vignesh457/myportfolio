@@ -1,5 +1,9 @@
 #skill{
   overflow: hidden;
+  background-image: url("../images/skill-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .skillTitleContainer{
 height: 15%;

@@ -28,8 +28,8 @@
       <nav>
         <ul id="navItems">
           <li><img id="logoPic" src="./images/icon.png" alt=""></li>
-          <li><a href="#project">Projects</a></li>
           <li><a href="#skill">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
           <li><a href="#achievement">Achievements</a></li>
           <li><a href="#certification">Certificates</a></li>
           <li><a href="#coding_profile">Coding Profiles</a></li>
@@ -42,14 +42,14 @@
           <div class="textContainer">
             <h1>Hi, I'm Vignesh</h1><br>
             <h5><span id="typeText"></span></h5><br>
-            <p>I am an ECE UnderGraduate from Cmr Institute Of Technology. I am technology enthusiast and ambitious to
-              become a fullstack web developer. I am good at problem solving and DSA, prefered coding language is Java.
+            <p>
+              I'm a passionate web developer with a strong command of HTML, CSS, JavaScript, ReactJS, Redux, and more. I have experience in both front-end and back-end technologies, including Node.js, Express, and MongoDB. I'm dedicated to keeping up with the latest industry trends and I'm prepared to contribute to your team's success.
             </p>
             <br>
             <a href="./images/resume.pdf" ><button><i class="fa-solid fa-eye"></i> Resume</button></a>
           </div>
           <div class="imageContainer">
-            <img id="poster" src="./images/0.png" alt="">
+            <img id="poster" src="./images/0.webp" alt="">
           </div>
         </div>
         <div class="back-face">
@@ -66,6 +66,27 @@
     </div>
     <div class="section-container">
       <div id="topPicOuter"><a href="#"><img class="topPic" src="./images/top.png" alt="top"></a></div>
+      <section id="skill">
+        <div class="skillTitleContainer">
+          <h1>Skills <img src="./images/underline.png"></h1>
+        </div>
+        <div class="skillBodyContainer">
+          <div class="skillContainer">
+            <div class="glow"></div>
+            <img class="yogaPic" src="images/yoga.png" />
+            <div style="--i:1" class="box"><div class="innerBox"><img src="./images/html.png"></div></div>
+            <div style="--i:2" class="box"><div class="innerBox"><img src="./images/css.png"></div></div>
+            <div style="--i:3" class="box"><div class="innerBox"><img src="./images/javascript.png"></div></div>
+            <div style="--i:4" class="box"><div class="innerBox"><img src="./images/react.png"></div></div>
+            <div style="--i:5" class="box"><div class="innerBox"><img src="./images/mysql.png"></div></div>
+            <div style="--i:6" class="box"><div class="innerBox"><img src="./images/java.png"></div></div>
+            <div style="--i:7" class="box"><div class="innerBox"><img src="./images/redux.png"></div></div>
+            <div style="--i:8" class="box"><div class="innerBox"><img src="./images/node-js.png"></div></div>
+            <div style="--i:9" class="box"><div class="innerBox"><img src="./images/mongodb.png"></div></div>
+            <div style="--i:10" class="box"><div class="innerBox"><img src="./images/git.png"></div></div>
+          </div>
+        </div>
+      </section>
       <section id="project">
         <h1>Projects <img src="./images/underline.png"></h1>
         <div class="project-container">
@@ -107,27 +128,6 @@
             </div>
           </div>
           <div class="project-bitmojiPart"><img src="./images/computer-person.png" alt="computer-pointer"></div>
-        </div>
-      </section>
-      <section id="skill">
-        <div class="skillTitleContainer">
-          <h1>Skills <img src="./images/underline.png"></h1>
-        </div>
-        <div class="skillBodyContainer">
-          <div class="skillContainer">
-            <div class="glow"></div>
-            <img class="yogaPic" src="images/yoga.png" />
-            <div style="--i:1" class="box"><div class="innerBox"><img src="./images/html.png"></div></div>
-            <div style="--i:2" class="box"><div class="innerBox"><img src="./images/css.png"></div></div>
-            <div style="--i:3" class="box"><div class="innerBox"><img src="./images/javascript.png"></div></div>
-            <div style="--i:4" class="box"><div class="innerBox"><img src="./images/react.png"></div></div>
-            <div style="--i:5" class="box"><div class="innerBox"><img src="./images/mysql.png"></div></div>
-            <div style="--i:6" class="box"><div class="innerBox"><img src="./images/java.png"></div></div>
-            <div style="--i:7" class="box"><div class="innerBox"><img src="./images/redux.png"></div></div>
-            <div style="--i:8" class="box"><div class="innerBox"><img src="./images/node-js.png"></div></div>
-            <div style="--i:9" class="box"><div class="innerBox"><img src="./images/mongodb.png"></div></div>
-            <div style="--i:10" class="box"><div class="innerBox"><img src="./images/git.png"></div></div>
-          </div>
         </div>
       </section>
       <section id="achievement">
@@ -212,13 +212,13 @@
         <div class="hobbyBodyContainer">
           <div class="hobbyDrawing">
             <div class="drop1">
-              <img src="./images/1.png" alt="">
+              <img src="./images/1.webp" alt="">
               <a href="https://www.instagram.com/vi_arts__/" target="_blank"><button class="dropButton"><i class="fa fa-instagram"></i></button></a>
             </div>
           </div>
           <div class="hobbyPhotography">
             <div class="drop2">
-              <img src="./images/2.png" alt="">
+              <img src="./images/2.webp" alt="">
               <a href="https://www.instagram.com/iam_mobile_photographer/" target="_blank"><button class="dropButton"><i class="fa fa-instagram"></i></button></a>
             </div>
           </div>
@@ -270,7 +270,7 @@
           c = 1;
         else if (textOnPoster.innerText == 'Photographer|')
           c = 2;
-        poster.setAttribute("src", `./images/${c}.png`);
+        poster.setAttribute("src", `./images/${c}.webp`);
       }, 500);
     };
     new Typewriter('#typeText', {

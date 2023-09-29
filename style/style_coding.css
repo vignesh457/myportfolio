@@ -1,6 +1,17 @@
 #coding_profile{
     display: flex;
     flex-direction: column;
+    background: url("../images/coding-bg.svg");
+    background-position: center;
+    animation: codingBG 50s linear infinite;
+}
+@keyframes codingBG {
+    0%,100%{
+        background-size: 15%;
+    }
+    50%{
+        background-size: 40%;
+    }
 }
 .coding_profileTextContainer{
     height: 25%;
@@ -92,16 +103,18 @@
     position: relative;
     width: 230px;
     height: 350px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.252);
+    border-radius: 24px;
     transform-style: preserve-3d;
+    border: 3px solid white;
+    box-shadow: rgb(0 0 0 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(0 0 0 / 35%) 0px -2px 6px 0px inset;
 }
 
 .codingProfileHeader{
     width: 100%;
     height: 35%;
     border-radius: 20px 20px 0px 0px;
-    background-color: #599BFC;
+    background: url("../images/coding-card-top-bg.svg");
+    background-size: 120%;
 }
 .codingLogo{
     width: 120px;
@@ -155,7 +168,8 @@
     width: 90%;
     height: 70%;
     border-radius: 20px;
-    background-color: #599afc;
+    background: url("../images/coding-card-top-bg.svg");
+    background-size: 120%;
     font-weight: 700;
     color: white;
     margin: 0;

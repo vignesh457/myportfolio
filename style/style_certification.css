@@ -1,6 +1,7 @@
 #certification{
     display: flex;
     flex-direction: column;
+    background: url("../images/certificate-bg.svg");
 }
 .certificationTextContainer{
     height: 15%;
