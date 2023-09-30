@@ -216,4 +216,8 @@
     .scannerQrPart{
         flex-direction: row;
     }
+    #coding_profile{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

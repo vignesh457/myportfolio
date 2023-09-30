@@ -106,4 +106,7 @@
     #coding_button{
       left: 69%;
     }
+    #achievement{
+        background-size: cover;
+    }
 }

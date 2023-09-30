@@ -161,4 +161,8 @@
     .drop2 img {
         margin-bottom: -20px;
     }
+    #hobby{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

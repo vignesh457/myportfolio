@@ -94,6 +94,10 @@ animation: glow 5s linear infinite;
 .yogaPic{
   width: 260px;
 }
+#skill{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 }
 @media screen and (max-width: 360px) {
 .box{
