@@ -4,7 +4,6 @@
     overflow: hidden;
     background: url("../images/hobby-bg.svg");
 }
-
 .hobbyTextContainer{
     height: 15%;
 }
@@ -30,6 +29,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.instagram{
+    width: 50px !important;
+    opacity: 0.8;
+}
+.instagram:hover{
+    opacity: 1;
 }
 .drop1,.drop2{
     position: relative;
