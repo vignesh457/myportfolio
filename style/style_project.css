@@ -420,6 +420,7 @@ section h1 img{
     .webHeader{
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: bottom;
     }
     .project-container{
         background-repeat: no-repeat;

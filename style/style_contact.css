@@ -51,27 +51,21 @@ footer p{
     z-index: 1000;
     opacity: 1;
     bottom: 0;
-    /* animation: waveAnimate 4s linear infinite; */
 }
 #wave2{
     z-index: 999;
     opacity: 0.5;
     bottom: 10px;
-    /* animation: waveAnimate 4s linear infinite; */
-    /* animation-direction: reverse; */
 }
 #wave3{
     z-index: 1000;
     opacity: 0.2;
     bottom: 0;
-    /* animation: waveAnimate 3s linear infinite; */
 }
 #wave4{
     z-index: 999;
     opacity: 0.7;
     bottom: 10px;
-    /* animation: waveAnimate 3s linear infinite; */
-    /* animation-direction: reverse; */
 }
 @keyframes waveAnimate {
     0%{
