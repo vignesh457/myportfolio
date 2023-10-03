@@ -8,7 +8,7 @@ let flag = true;
 function navIterate(){
   Array.from(document.querySelectorAll("#navItems li a")).forEach((element) => {
     element.addEventListener("mouseover", () => {
-      element.style.color="#005FF9";
+      element.style.color="#dbf0ff";
     });
     element.addEventListener("mouseout", () => {
       element.style.color="#2B3467";
@@ -86,7 +86,7 @@ function ScannerIterate() {
       setTimeout(() => {
         let siblingElement = element.nextElementSibling.innerHTML;
         if (siblingElement == "LeetCode") {
-          codingLogo.innerHTML='<img src="./images/leetcode-icon.png">';
+          codingLogo.innerHTML='<img src="./images/leetcode-icon.webp">';
           cbTitle.innerHTML='<div>Leetcode</div>';
           rating.innerHTML='1431';
           problems.innerHTML='300+';
@@ -94,7 +94,7 @@ function ScannerIterate() {
           cbBtn.innerHTML='<button><a href="https://leetcode.com/19R01A0457/" target="_blank">View Profile</a></button>';
         }
         if (siblingElement == "GeeksForGeeks") {
-          codingLogo.innerHTML='<img src="./images/gfg-icon.png">';
+          codingLogo.innerHTML='<img src="./images/gfg-icon.webp">';
           cbTitle.innerHTML='<div>Geeks For Geeks</div>';
           rating.innerHTML='558';
           problems.innerHTML='260+';
@@ -102,7 +102,7 @@ function ScannerIterate() {
           cbBtn.innerHTML='<button><a href="https://auth.geeksforgeeks.org/user/19r01a0457/practice" target="_blank">View Profile</a></button>';
         }
         if (siblingElement == "CodeChef") {
-          codingLogo.innerHTML='<img src="./images/codechef-icon.png">';
+          codingLogo.innerHTML='<img src="./images/codechef-icon.webp">';
           cbTitle.innerHTML='<div>Code Chef</div>';
           rating.innerHTML='1554(2⭐)';
           problems.innerHTML='120+';

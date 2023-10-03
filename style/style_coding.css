@@ -51,7 +51,7 @@
     width: 100%;
 }
 .activeScanner{
-    background-image: url("../images/qr-border.png");
+    background-image: url("../images/qr-border.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -74,7 +74,7 @@
 }
 .activeScanner::after{
     content: '';
-    background-image: url("../images/qr-code-green.png");
+    background-image: url("../images/qr-code-green.webp");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
