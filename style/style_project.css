@@ -15,6 +15,9 @@ body{
     background-color: rgb(235, 238, 241);
     font-family: 'Poppins', sans-serif;
 }
+.star{
+    filter: hue-rotate(0deg) !important;
+}
 /* PreLoader */
 #preLoader{
     display: flex;
@@ -316,6 +319,7 @@ section h1 img{
     justify-content: center;
     align-items: center;
     margin: 5px;
+    filter: hue-rotate(140deg);
 }
 .chromePic img{
     width: 100%;
